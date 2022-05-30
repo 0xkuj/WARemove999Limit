@@ -1,0 +1,9 @@
+Package: com.0xkuj.waremove999limit
+Name: WA Remove 999 Limit
+Version: 1.0
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: 0xkuj
+Author: 0xkuj
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
