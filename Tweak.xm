@@ -3,14 +3,14 @@
 	//swift var
  	NSInteger unreadCount;
 }
+@property (nonatomic, copy, readwrite) NSString *text;
 @end
 
 %hook WAIndicatorContainerView
--(void)setStateWithPinned:(BOOL)arg1 muted:(BOOL)arg2 mentioned:(BOOL)arg3 unreadCount:(NSInteger)arg4 animated:(BOOL)arg5 {
+-(void)setStateWithPinned:(BOOL)arg1 muted:(BOOL)arg2 mentioned:(BOOL)arg3 unreadCount:(NSInteger)arg4 animated:(BOOL)arg5 isAssignedAgentUnread:(BOOL)arg6 {
 	%orig;
 	// KVO (class not compliant)
 	// [(id)self valueForKey:@"unreadCount"]
-
 	NSInteger _unreadCount = MSHookIvar<NSInteger>((id)self, "unreadCount");
 	NSString *unreadCountString = [NSString stringWithFormat: @"%ld", (long)_unreadCount];
 	NSArray *mainAppLibrarySubviews = ((UIView*)self).subviews;
