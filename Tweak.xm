@@ -28,7 +28,7 @@
 			}
 		}
 	}
-	/* hard coded 
+	/* hard coded  
 	NSLog(@"kuj set got to the right place? %@",((UIView*)self).subviews[0].subviews[3].subviews[0]);
 	if ([((UIView*)self).subviews[0] isKindOfClass:[UIView class]] && 
 	     [((UIView*)self).subviews[0].subviews[3] isKindOfClass:[NSClassFromString(@"MainAppLibrary.UnreadBadgeView") class]] &&
