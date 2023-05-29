@@ -1,4 +1,4 @@
-TARGET := iphone:clang:latest:14.4
+TARGET := iphone:clang:14.5:14.5
 INSTALL_TARGET_PROCESSES = WhatsApp
 ARCHS = arm64e arm64
 
