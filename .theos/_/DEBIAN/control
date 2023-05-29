@@ -1,0 +1,10 @@
+Package: com.0xkuj.waremove999limit
+Name: WA Remove 999 Limit (rootless)
+Description: Remove 999+ badge limit on WhatsApp
+Maintainer: 0xkuj
+Author: 0xkuj
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 168
